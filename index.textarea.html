@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text area</title>
+</head>
+<style></style>
+<body>
+   <div id="wrap">
+    <textarea name="textarea" placeholder="write your comment" id="" cols="30" rows="10"></textarea>
+<p id="paragraph"></p>
+</div> 
+
+
+<script>
+let textarea=document.querySelector("textarea")
+let para=document.querySelector("p")
+
+
+
+textarea.onkeyup = function(){
+            const remaining =  textarea.value
+            para.innerHTML = remaining
+        }
+        paragraph.onkeyup = function(){
+            const word = paragraph.value
+            para.innerHTML = word
+        }
+
+function changetext(){
+    const textarea=document.querySelector('textarea').value;
+    let newvalue='';
+    for(let i=textarea; i>=0;i--){
+        newvalue += textarea[i]
+
+    }
+    document.querySelector('paragraoh')
+}
+
+
+</script>
+</body>
+
+</html>
